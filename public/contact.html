@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <header class="flex">
+      
+      <a href="index.html" class="logolink"><h1 class="flex1">Lucretia</h1></a>
+
+      <div id="smallnav">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </div>
+
+      <nav id="nav" class="flex1">
+        <ul>
+          <a href="products.html"><li>Products</li></a>
+          <a href="seller.html"><li>Become a Seller</li></a>
+          <a href="about.html"><li>About Us</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div style="width: 100%"><iframe id="map" width="50%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
+
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="4161fafc-c70e-4445-908a-e70b7ff11d94">
+        
+        <label for="name">Name: </label>
+        <br>
+        <input type="text" name="name" required>
+        <br>
+
+        <label for="email">Email: </label>
+        <br>
+        <input type="email" name="email" required>
+        <br>
+
+        <label for="message">Message:</label>
+        <br>
+        <textarea name="message" required></textarea>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <br>
+        <button type="submit">Submit Form</button>
+      </form>
+
+
+      
+      <script src="contactform.js"></script>
+
+    </main>
+  </body>
+</html>

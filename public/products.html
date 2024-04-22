@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="flex">
+      <a href="index.html" class="logolink"><h1 class="flex1">Lucretia</h1></a>
+
+      <div id="smallnav">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </div>
+
+
+      <nav id="nav" class="flex1">
+        <ul>
+          <a href="products.html"><li>Products</li></a>
+          <a href="seller.html"><li>Become a Seller</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a href="about.html"><li>About Us</li></a>
+          <a href="index.html"><li>Sign Out</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="productmain">
+      <h2 class="page-label" >Product Page</h2>
+      
+      <div id="search">
+        <input id="addproduct" type="button" value="Add an Item"> <br>
+        <input id="searchbar" type="text" placeholder="Search for a Product">
+        <input id="searchenter" type="submit">
+      </div>
+
+      <!--Product Item-->
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div id="popup" class="w3-container flex">
+            <span onclick="document.getElementById('id01').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+
+              <div class="flex1">
+                <form id="addProductForm" action="">
+
+                  <h3>Sell a Product</h3>
+
+                  <label for="productName">Product Name:</label> <br>
+                  <input type="text" name="productName" id="productName" required>
+                  <br>
+
+                  <label for="seller">Seller:</label> <br>
+                  <input type="text" name="seller" id="seller" required>
+                  <br>
+
+                  <label for="summary">Summary:</label> <br>
+                  <input type="text" name="summary" id="summary" required>
+                  <br>
+                  
+                  <label for="date">Date Posted:</label> <br>
+                  <input type="date" name="date" id="date" required>
+                  <br>
+
+                  <label for="price">Price:</label> <br>
+                  <input type="text" name="price" id="price" required>
+                  <br>
+
+                  <label for="size">Size (if no size but N/A):</label> <br>
+                  <input type="text" name="size" id="size" required>
+                  <br>
+
+                  <label for="brand">Brand:</label> <br>
+                  <input type="text" name="brand" id="brand" required>
+                  <br>
+
+                  <label for="gender">Gender:</label> <br>
+                  <input type="text" name="gender" id="gender" required>
+                  <br>
+                  <br>
+
+                  <label for="image">Chose an Image for the product</label>
+                <input type="file" name="image" id="image">
+
+                  <input type="submit" id="addproductsubmit" required>
+                  <br>
+                </form>
+              </div> 
+
+              <img class="flex1" width="100%" style="display: block; margin: 0 auto;" id="modalImg" src="" alt="">
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <script src="main.js"></script>
+  </body>
+
+</html>

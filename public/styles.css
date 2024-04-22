@@ -1,0 +1,336 @@
+:root {
+  --header-bkg: #0F40F5;
+  --black: black;
+  --header-link-color: white;
+  --login-bkg: #efefefc2;
+  --grey: grey;
+  --button: #0f41f597;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#indexbody {
+  background-image: url(image/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: var(--header-link-color)
+}
+
+header {
+  background-color: var(--header-bkg);
+  padding: 10px;
+}
+
+#smallnav {
+  background-color: white;
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.active {
+  display: block;
+}
+
+.lines {
+  border-bottom: 1px solid black;
+  padding: 2px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.displayblock {
+  display: block;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--header-link-color);
+  padding: 5px;
+}
+
+#login-board {
+  color: var(--black);
+  margin-top: 10%;
+  padding: 30px;
+  border-radius: 5px;
+  order: 1;
+  margin: 100px auto;
+  width: 50%;
+  background-color: var(--login-bkg);
+}
+
+#ft-words {
+  order: 2;
+  text-align: center;
+  margin: auto;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#login-board input{
+  margin-bottom: 10%;
+  max-width: 100%;
+  width: 70%;
+}
+
+#login-board button {
+  background-color: var(--button);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--grey);
+}
+
+/* Products.html styles*/
+#search {
+  margin: 40px auto 80px auto;
+  width: 70%;
+}
+
+#searchbar {
+  width: 91%;
+  padding: 10px;
+}
+
+#addproduct {
+  background-color: var(--button);
+  max-width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#addproductsubmit {
+  background-color: var(--button);
+  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#image{
+  margin-bottom: 20px;
+}
+
+#searchenter {
+  max-width: 100%;
+  padding: 10px;
+}
+
+#buyform label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textfield {
+  width: 100%;
+  padding: 5px;
+}
+
+.page-label {
+  padding-top: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.item-list {
+  border: 2px solid rgb(122, 120, 120);
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.item-list img{
+  display: block;
+  margin: 0 auto;
+}
+
+.item-list div {
+  padding-left: 10px;
+}
+
+.product-item {
+  text-decoration: none;
+  color: black;
+}
+
+.logolink {
+  text-decoration: none;
+  color: var(--header-link-color)
+}
+/* About.html styles */
+#aboutus img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+#aboutus h2 {
+  width: 70%;
+  margin: 10px auto;
+}
+
+
+#aboutus p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Seller.html styles */
+#signup {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 45%;
+  padding: 20px;
+  margin: 100px auto;
+  background-color: var(--login-bkg);
+}
+
+#signup img{
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+}
+
+#signup input{
+  margin-bottom: 20px;
+}
+
+/* itempage.html styles */
+#itempage img {
+  display: block;
+  margin: 10px auto;
+}
+
+
+#itempage p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#buy {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  background-color: var(--button);
+  display: block;
+  margin: 0 auto;
+}
+
+#buyform {
+  border: 2px solid var(--button);
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--login-bkg);
+}
+
+#buyform img {
+  max-width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#buyform input {
+  margin-bottom: 20px;
+}
+
+#submit {
+  padding: 5px;
+}
+
+/* Contact.html */
+#contactForm {
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.formCenter {
+  display: block;
+  margin: 0 auto;
+}
+
+#map {
+  display: block;
+  margin: 0 auto;
+}
+
+#contactForm input {
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .flex {
+    display: flex;
+  }
+
+  .flex1 {
+    flex: 1;
+  }
+
+  .flex3 {
+    flex: 3;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  nav{
+    text-align: right;
+    display: block;
+  }
+
+  nav ul li{
+    display: inline-block;
+  }
+  #smallnav {
+    display: none;
+  }
+  /* Products.html styles*/
+
+  /* About.html styles */
+
+  /* Seller.html styles */
+
+  /* itempage.html styles */
+
+  /*buypage.html styles*/
+  #buyform {
+    width: 50%;
+  }
+}
