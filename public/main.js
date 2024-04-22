@@ -16,7 +16,7 @@ addproduct.onclick = () => {
 
 //JSON CODE BELOW
 const getJson = async() => {
-  const url = "http://localhost:3000/api";
+  const url = "https://projectpart7-7sap.onrender.com/api";
 
   try {
     const response = await fetch(url);
